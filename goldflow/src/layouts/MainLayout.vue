@@ -24,11 +24,12 @@
               @click="router.push('/')"
               aria-label="Home"
             >
-              <img
-                :src="logo"
-                alt="Goldis Logo"
-                class="nav-logo"
-              />
+              <button
+                  unelevated
+                  color="primary"
+                  class="drawer-btn"
+                  @click="router.push('/dashboard')"
+                >ورود</button>
             </q-btn>
 
             <q-separator vertical color="grey-3" class="gt-sm separator" />
@@ -212,6 +213,14 @@ onMounted(() => {
   border-radius: 12px;
   font-weight: 500;
   width: 100%;
+}
+.drawer-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0rem 3rem;
+  border: 1px solid var(--q-primary);
+  color: var(--q-primary);
 }
 
 

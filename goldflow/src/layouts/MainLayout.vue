@@ -97,20 +97,20 @@ const isAuthenticated = ref(false);
 const authStore = useAuthStore()
 
 
-function redirectToLogin() {
-  const idpUrl = "http://localhost:9005/login";
-  const redirectUri = "http://localhost:9000/authCallBack";
-  const callbackUrl = "http://localhost:8080/auth/callback";
-  window.location.href = `${idpUrl}?redirect_uri=${encodeURIComponent(redirectUri)}&callback_url=${encodeURIComponent(callbackUrl)}`;
-}
+// function redirectToLogin() {
+//   const idpUrl = "http://localhost:9005/login";
+//   const redirectUri = "http://localhost:9000/authCallBack";
+//   const callbackUrl = "http://localhost:8080/auth/callback";
+//   window.location.href = `${idpUrl}?redirect_uri=${encodeURIComponent(redirectUri)}&callback_url=${encodeURIComponent(callbackUrl)}`;
+// }
 
-function redirectToSingUp() {
-  console.log("Redirecting to signup...");
-  const idpUrl = "http://localhost:9005/signup";
-  const redirectUri = "http://localhost:9000/authCallBack";
-  const callbackUrl = "http://localhost:8080/auth/callback";
-  window.location.href = `${idpUrl}?redirect_uri=${encodeURIComponent(redirectUri)}&callback_url=${encodeURIComponent(callbackUrl)}`;
-}
+// function redirectToSingUp() {
+//   console.log("Redirecting to signup...");
+//   const idpUrl = "http://localhost:9005/signup";
+//   const redirectUri = "http://localhost:9000/authCallBack";
+//   const callbackUrl = "http://localhost:8080/auth/callback";
+//   window.location.href = `${idpUrl}?redirect_uri=${encodeURIComponent(redirectUri)}&callback_url=${encodeURIComponent(callbackUrl)}`;
+// }
 function goToDashboard(){
   router.push('/dashboard')
 }

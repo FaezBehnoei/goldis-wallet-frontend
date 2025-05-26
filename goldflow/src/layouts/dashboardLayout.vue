@@ -127,7 +127,7 @@ const footerDashboard = defineAsyncComponent(() => import('src/components/dashbo
 import { useAuthStore } from "src/stores/auth";
 import SupportBtn from "src/components/supportBtn.vue";
 const walletStore = useWalletStore()
-const isAdmin = ref('')
+// const isAdmin = ref('')
 
 // const fetchUserInfo = async () => {
 //   try {

@@ -85,7 +85,7 @@
 import { defineAsyncComponent, onMounted, ref } from "vue";
 import { useRouter } from "vue-router";
 import { useAuthStore } from "src/stores/auth";
-import logo from 'src/assets/LOGO.png'
+// import logo from 'src/assets/LOGO.png'
 
 const sideBarMain = defineAsyncComponent(() => import('../components/mainLayout/sideBard/sideBarMain.vue'))
 const mobileDrawerMain = defineAsyncComponent(() => import('../components/mainLayout/sideBard/mobileDrawerMain.vue'))
